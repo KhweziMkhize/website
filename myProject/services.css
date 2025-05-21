@@ -1,0 +1,32 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.content-1 {
+    height: 850px;
+    width: 100vw;
+    display: flex;
+    background-color: chartreuse;
+    margin-top: 30px;
+    
+}
+@media (max-width: 400px) {
+    .background-hero {
+      height: auto !important; /* Adjust height dynamically */
+      padding: 20px;
+    }
+}
+
+.content-1-1 {
+    height: 500px;
+    width: 900px;
+    background-color: cornsilk;
+    margin: 0 auto;
+    border-bottom-left-radius: 80% 30px;
+    border-bottom-right-radius: 80% 30px;
+
+    
+
+}

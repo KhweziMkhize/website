@@ -1,0 +1,803 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.background-hero {
+    background-color: rgb(224,242,241);
+    height: 20vh;
+    width: 100vw;
+}
+
+.nav {
+    display: flex;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px
+   
+}
+
+.nav a {
+    text-decoration: none;
+    color:unset
+}
+
+footer a {
+    text-decoration: none;
+    color:unset
+}
+
+.logo h1{
+    color: rgb(27,94,32);
+    font-family: sans-serif, Helvetica, Arial;
+    font-size: 30px;
+    padding-left: 160px;
+}
+.ham {
+    height: 50px;
+    width: 50px;
+    display: none;
+}
+
+.nav-bar{
+    margin-right: 80px
+}
+
+.nav-bar1 {
+    display: none;
+}
+
+
+.hidden {
+    display:none !important;
+}
+
+
+.nav-bar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 30vw;
+    font-size: 16px;
+    font-family: sans-serif, Helvetica, Arial;
+
+
+}
+
+.button {
+    margin-right: 190px
+}
+
+.button button {
+    padding: 15px 12px;
+    border: none;
+    border-radius: 5px;
+    font-family: sans-serif, Helvetica, Arial;
+    font-size:16px;
+    background-color: rgb(27,94,32);
+    transition: all 0.5ms ease-in-out;
+    position:relative;
+    cursor:pointer;
+    color: rgb(255, 250, 250);
+   
+
+}
+
+.button button:hover {
+    background-color: rgba(33, 58, 10, 0.527) ;
+    
+}
+
+.button button:active {
+    /*try to make the button seem like it is being pressed and it is going inward*/
+    transform: translateY(5px);
+    background-color: rgb(127,150,32,.7);
+   
+   
+}
+@media (min-width : 220px) and (max-width: 400px) {
+    .nav{
+        position: relative;
+    }
+
+    .logo h1{
+        color: rgb(27,94,32);
+        font-family: sans-serif, Helvetica, Arial;
+        font-size: 0.9em;
+        padding-right:208px;
+        padding-bottom: 110px;
+        padding-left: 0px;
+        margin: 0 auto;
+    }
+
+    .ham {
+        position: absolute;
+        display: initial;
+        height: 50px;
+        width: 50px;
+        top: -21px;
+        left: 80%
+    }
+    
+    .ham img {
+        height: 50px;
+        width: 50px
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .nav-bar1 {
+        position: absolute;
+        display: initial;
+        height: 289px;
+        width: 150px;
+        background-color: rgba(27, 94, 68, 0.973);
+        top: 25%;
+        left: 53vw;
+        margin-left: 20px;
+        border-radius: 5px 0 0 5px;
+    }
+
+    .nav-bar1 ul {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        line-height:59px;
+        list-style-type: none;
+    }
+
+    .nav-bar1 li {
+        margin-left: -23px;
+    }
+
+    .button {
+        display: none;
+    }
+}
+
+@media (min-width : 401px) and (max-width: 500px)  {
+    .nav{
+        position: relative;
+    }
+
+    .logo h1{
+        color: rgb(27,94,32);
+        font-family: sans-serif, Helvetica, Arial;
+        font-size: 1.2em;
+        padding-right:268px;
+        padding-bottom: 110px;
+        padding-left: 0px;
+        text-align: start;
+        margin: 0 auto;
+        min-width: 50%;
+    }
+
+    .ham {
+        position: absolute;
+        display: initial;
+        height: 50px;
+        width: 50px;
+        top: -21px;
+        left: 80%
+    }
+    
+    .ham img {
+        height: 50px;
+        width: 50px
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .nav-bar1 {
+        position: absolute;
+        display: initial;
+        height: 289px;
+        width: 176px;
+        background-color: rgba(27, 94, 68, 0.973);
+        top: 25%;
+        left: 56%;
+        margin-left: 20px;
+        border-radius: 5px 0 0 5px;
+    }
+
+    .nav-bar1 ul {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        line-height:59px;
+        list-style-type: none;
+    }
+
+    .nav-bar1 li {
+        margin-left: -23px;
+    }
+
+    .button {
+        display: none;
+    }
+
+}
+
+@media (min-width : 501px) and (max-width: 721px) {
+    .nav{
+        position: relative;
+    }
+
+    .logo h1{
+        color: rgb(27,94,32);
+        font-family: sans-serif, Helvetica, Arial;
+        font-size: 1.5em;
+        padding-right:400px;
+        padding-bottom: 110px;
+        padding-left: 0px;
+        text-align: start;
+        margin: 0 auto;
+        min-width: 50%;
+    }
+
+    .ham {
+        position: absolute;
+        display: initial;
+        height: 50px;
+        width: 50px;
+        top: -21px;
+        left: 80%
+    }
+    
+    .ham img {
+        height: 50px;
+        width: 50px
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .nav-bar1 {
+        position: absolute;
+        display: initial;
+        height: 289px;
+        width: 50%;
+        background-color: rgba(27, 94, 68, 0.973);
+        top: 25%;
+        left: 60%;
+        margin-left: 2%;
+        border-radius: 5px 0 0 5px;
+    }
+
+    .nav-bar1 ul {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        line-height:59px;
+        list-style-type: none;
+        margin-left: 15%;
+    }
+
+    .nav-bar1 li {
+        margin-left: -23px;
+    }
+
+    .button {
+        display: none;
+    }
+}
+
+@media (min-width : 722px) and (max-width: 920px) {
+    .nav{
+        position: relative;
+    }
+
+    .logo h1{
+        color: rgb(27,94,32);
+        font-family: sans-serif, Helvetica, Arial;
+        font-size: 1.5em;
+        text-align: start;
+        margin: 0 auto;
+        min-width: 100%;
+        transform: translate(-17%, -143%);
+        padding-left: 20%;
+        padding-right: 4%;
+
+    }
+
+    .ham {
+        display: none;
+    }
+    
+
+   .nav-bar {
+        transform: translate(-47px, -42px);
+        width:41%
+    }
+
+    .nav-bar1 {
+       display: none;
+    }
+
+   
+.nav-bar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 50vw;
+    font-size: 16px;
+    font-family: sans-serif, Helvetica, Arial;
+
+
+}
+
+.button {
+    display: none;
+}
+
+}
+
+@media (min-width: 921px) and (max-width: 1121px) {
+    .nav{
+        position: relative;
+    }
+
+    .logo h1{
+        color: rgb(27,94,32);
+        font-family: sans-serif, Helvetica, Arial;
+        font-size: 1.5em;
+        text-align: start;
+        margin: 0 auto;
+        min-width: 100%;
+        transform: translate(-17%, -143%);
+        padding-left: 20%;
+        padding-right: 4%;
+
+    }
+
+    .ham {
+        display: none;
+    }
+    
+
+   .nav-bar {
+        transform: translate(-47px, -42px);
+        width:41%;
+        max-width: 66%;
+        min-width: 51%;
+    }
+
+    .nav-bar1 {
+       display: none;
+    }
+
+   
+.nav-bar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 50vw;
+    font-size: 16px;
+    font-family: sans-serif, Helvetica, Arial;
+
+
+}
+
+.button {
+    display: none;
+}
+
+
+}
+
+
+footer {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(224,242,241);
+
+}
+
+.content-footer {
+    height: 600px;
+    width: 1350px;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-logo {
+    height: 350px;
+    width: 250px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.footer-logo a {
+    color:rgb(27,94,32);
+    text-decoration: none;
+}
+
+.footer-logo h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.footer-logo p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+    line-height: 20px;
+}
+
+.menu {
+    height:350px;
+    margin-left: 100px;
+    margin-top: 100px;
+    
+    
+}
+
+.menu h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.menu li { 
+    padding-bottom: 12px;
+    list-style-type: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.our-services {
+    height:350px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.our-services li {
+    padding-bottom: 18px;
+    list-style-type: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.our-services h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.reach-out {
+    display: flex;
+    flex-direction: column;
+    height:350px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.reach-out a {
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+    padding-bottom: 45px;
+}
+
+.reach-out .email {
+    font-size: 12px;
+}
+
+.reach-out img {
+    width: 20px;
+    height: 20px;
+    padding-right: 15px;
+
+}
+
+
+@media (min-width: 220px)  and (max-width: 400px){
+    footer {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .content-footer {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+    .content-footer ul {
+        padding-left: 0px;
+        margin-left: 0px;
+        line-height: 25px;
+    }
+
+
+    .footer-logo, 
+    .menu, 
+    .our-services, 
+    .reach-out {
+        width: 90%;
+        margin: 20px auto;
+        height: 35%;
+    }
+
+    .footer-logo p {
+        text-align: justify;
+    }
+
+    .menu h1,
+    .our-services h1 {
+        text-align: justify;
+    }
+
+    .reach-out {
+        align-items: center;
+    }
+
+    .reach-out a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (min-width : 401px) and (max-width: 500px) {
+    footer {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .content-footer {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+    .content-footer ul {
+        padding-left: 0px;
+        margin-left: 0px;
+        line-height: 25px;
+    }
+
+
+    .footer-logo, 
+    .menu, 
+    .our-services, 
+    .reach-out {
+        width: 90%;
+        margin: 20px auto;
+        height: 35%;
+    }
+
+    .footer-logo p {
+        text-align: justify;
+    }
+
+    .menu h1,
+    .our-services h1 {
+        text-align: justify;
+    }
+
+    .reach-out {
+        align-items: center;
+    }
+
+    .reach-out a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (min-width : 501px) and (max-width: 721px) {
+    footer {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .content-footer {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+    .content-footer ul {
+        padding-left: 0px;
+        margin-left: 0px;
+        line-height: 25px;
+    }
+
+
+    .footer-logo, 
+    .menu, 
+    .our-services, 
+    .reach-out {
+        width: 90%;
+        margin: 20px auto;
+        height: 35%;
+    }
+
+    .footer-logo p {
+        text-align: justify;
+    }
+
+    .menu h1,
+    .our-services h1 {
+        text-align: justify;
+    }
+
+    .reach-out {
+        align-items: center;
+    }
+
+    .reach-out a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (min-width : 722px) and (max-width: 920px) {
+    .footer-logo {
+        transform: translate(97%, 28%);
+        margin-top:0px;
+        margin-left: -26px;
+    }
+
+    .footer-logo h1 {
+        font-size: 83%;
+    }
+
+    .footer-logo p {
+        text-align: start;
+        font-size: 83%;
+    }
+
+    .menu {
+        transform: translate(51%, 0%);
+    }
+
+    .menu h1, li {
+        font-size: 83%;
+    }
+
+    .our-services {
+        transform: translate(-24%, 0%);
+    }
+
+    .our-services h1, li{
+        font-size: 83%;
+    }
+
+    .reach-out {
+        transform: translate(-65%, 0%);
+    }
+
+    .reach-out h1 {
+        font-size: 83%;
+    }
+}
+
+@media (min-width: 921px) and (max-width: 1170px) {
+    
+
+footer {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(224,242,241);
+
+}
+
+.content-footer {
+    height: 600px;
+    width: 1350px;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-logo {
+    height: 350px;
+    width: 250px;
+    margin-left: 100px;
+    margin-top: 100px;
+    transform: translate(13%,0);
+}
+
+.footer-logo a {
+    color:rgb(27,94,32);
+    text-decoration: none;
+}
+
+.footer-logo h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.footer-logo p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+    line-height: 20px;
+}
+
+.menu {
+    height:350px;
+    margin-left: 100px;
+    margin-top: 100px;
+    transform: translate(-39%,0%);
+    
+    
+}
+
+.menu h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.menu li { 
+    padding-bottom: 12px;
+    list-style-type: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.our-services {
+    height:350px;
+    margin-left: 100px;
+    margin-top: 100px;
+    transform: translate(-62%,0%);
+}
+
+.our-services li {
+    padding-bottom: 18px;
+    list-style-type: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.our-services h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.reach-out {
+    display: flex;
+    flex-direction: column;
+    height:350px;
+    margin-left: 100px;
+    margin-top: 100px;
+    transform: translate(-96%, -2%);
+}
+
+.reach-out h1 {
+    font-size: 1.8em;
+}
+
+.reach-out a {
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+    padding-bottom: 45px;
+}
+
+.reach-out .email {
+    font-size: 12px;
+}
+
+.reach-out img {
+    width: 20px;
+    height: 20px;
+    padding-right: 15px;
+
+}
+
+}
